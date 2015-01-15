@@ -46,7 +46,9 @@
     _webSocket.delegate = nil;
     [_webSocket close];
     
-    _webSocket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"ws://localhost:9000/chat"]]];
+    _webSocket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://floating-refuge-1186.herokuapp.com/"]]];
+    
+    
     _webSocket.delegate = self;
     
     self.title = @"Opening Connection...";
